@@ -1,0 +1,12 @@
+server:
+  port: 1111
+spring:
+  profiles:
+    active: master
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/abdou-karim/service-config.git
+          default-label: master
